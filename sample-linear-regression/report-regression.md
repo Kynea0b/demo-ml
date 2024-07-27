@@ -15,6 +15,7 @@ pythonのカリフォルニア住宅価格を例に、回帰分析の技法を�
 
 ## 単回帰分析
 
+[simple-regression.py](https://github.com/kokeshiM0chi/demo-datascience/blob/main/sample-linear-regression/simple-regression.py)
 featuresで説明変数を全て列挙して、各相関係数を計算し、ヒートマップで出力します。
 
 <img width="400" alt="heatmap" src="https://github.com/user-attachments/assets/e0f7d023-8d7d-42c6-a629-00db23e663fd">
