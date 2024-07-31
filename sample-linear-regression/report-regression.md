@@ -41,6 +41,8 @@ featuresで説明変数を全て列挙して、各相関係数を計算し、ヒ
 
 ## 重回帰分析
 
+source code: https://github.com/kokeshiM0chi/demo-datascience/blob/main/sample-linear-regression/multiple-regression.py
+
 続いて重回帰分析です。相関係数の低いものも含めて、ヒストグラムにあるもの全てを説明変数とします。
 Lasso回帰を行い、その後Ridge回帰をしています。
 
