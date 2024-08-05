@@ -44,6 +44,15 @@ d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,click
 
 todo write
 
+### ポアソン回帰と負の二項回帰を比較
+
+残差をプロットして、ポアソン回帰と負の二項回帰を比較すると、ポアソン回帰でより残差が広がっていることがわかります。
+<img src="https://github.com/user-attachments/assets/9ed56f0d-b531-4624-ba0f-4ebf2814cdfc" width="400">
+<img src="https://github.com/user-attachments/assets/75b275bd-7e3b-4693-b916-162e42dc959a" width="400">
+
+
+
+
 ### 尤度比検定
 
 todo write
