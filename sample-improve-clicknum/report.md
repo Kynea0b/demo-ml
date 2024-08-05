@@ -58,6 +58,10 @@ todo write
 todo write
 検定をして、2つの回帰モデルの適合度に統計的に有意な差があるかどうかを判断
 
-## SVM
+## ランダムフォレスト回帰
+
+## SVR
+
+
 
 todo write
