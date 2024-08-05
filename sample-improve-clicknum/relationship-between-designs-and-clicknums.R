@@ -1,49 +1,36 @@
-
 # load data about relationship between designs and clicknumber
 dat1 <- read.table("./data/dat1.csv",
-                   sep=",",
-                   header=TRUE,
-                   na.strings=c(''),
-                   fill=TRUE)
+                        sep=",",
+                        header=TRUE,
+                        na.strings=c(''),
+                        fill=TRUE)
 
 # ** make a poisson regression model **
-p_model_glm<-glm(click~.,dat1,family=poisson)
-summary(p_model_glm)
+p_model<-glm(click~.,data = dat1,family=poisson)
+summary(p_model)
 
 
-p_model_glm2<-step(p_model_glm)
-
-
-mean(dat1[,13])
-
-var(dat1[,13])
+dat1.glm2<-step(p_model)
 
 # ** Negative binomial regression model is more suitable because mean < variance.
+mean(dat1[,13])
+var(dat1[,13])
 
+# ** 負の二項分布 **
 # make a negative binomial regression model
 library(MASS)
-nb_model_glmnb<-glm.nb(click~.,dat1)
-summary(nb_model_glmnb)
-
+nb_model<-glm.nb(click~.,dat1)
+summary(nb_model)
 
 # Which is more suitable, poisson regression or negatibe binomial regression ?
-# Poisson regression model
-## get residuals from poisson regression model
-p_res <- resid(p_model_glm)
-
-## plot between predicted click num and designs
-plot(fitted(p_model_glm), p_res, col='steelblue', pch=16,
-     xlab='Predicted ClickNums', ylab='Standardized Residuals', main='Poisson')
-
+## Residual plot for Poisson regression
+p_res <- resid(p_model)
+plot(fitted(p_model), p_res, col='steelblue', pch=16,
+     xlab='Predicted Offers', ylab='Standardized Residuals', main='Poisson')
 abline(0,0)
 
-
-# Negative binomial regression model
-## get residuals from binomial regression model
-nb_res <- resid(nb_model_glmnb)
-
-plot(fitted(nb_model_glmnb), nb_res, col='steelblue', pch=16,
-     xlab='Predicted ClickNums', ylab='Standardized Residuals', main='Negative Binomial')
-
+## Residual plot for negative binomial regression 
+nb_res <- resid(nb_model)
+plot(fitted(nb_model), nb_res, col='steelblue', pch=16,
+     xlab='Predicted Offers', ylab='Standardized Residuals', main='Negative Binomial')
 abline(0,0)
-
