@@ -120,7 +120,7 @@ AIC: 1052.4
 Number of Fisher Scoring iterations: 1
 ```
 
-### ポアソン回帰と負の二項回帰を比較
+### ポアソン回帰 vs 負の二項回帰
 
 残差をプロットして、ポアソン回帰と負の二項回帰を比較すると、ポアソン回帰でより残差が広がっていることがわかります。
 <img src="https://github.com/user-attachments/assets/9ed56f0d-b531-4624-ba0f-4ebf2814cdfc" width="400">
