@@ -122,17 +122,33 @@ Number of Fisher Scoring iterations: 1
 
 ### ポアソン回帰 vs 負の二項回帰
 
+比較には、残差のプロットをするかまたは尤度比検定を行います。
+
 残差をプロットして、ポアソン回帰と負の二項回帰を比較すると、ポアソン回帰でより残差が広がっていることがわかります。
 <img src="https://github.com/user-attachments/assets/9ed56f0d-b531-4624-ba0f-4ebf2814cdfc" width="400">
 <img src="https://github.com/user-attachments/assets/75b275bd-7e3b-4693-b916-162e42dc959a" width="400">
 
-
-
-
 ### 尤度比検定
 
-todo write
-検定をして、2つの回帰モデルの適合度に統計的に有意な差があるかどうかを判断
+また、クリック数の増減に与える説明変数の結果を見ると、ポアソン回帰と負の二項回帰では一部重複が見られたため、尤度比検定を行なってみます。
+
+```
+> lrtest(nb_model, p_model)
+Likelihood ratio test
+
+Model 1: click ~ d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11 + 
+    d12
+Model 2: click ~ d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 + d10 + d11 + 
+    d12
+  #Df  LogLik Df  Chisq Pr(>Chisq)    
+1  13  -513.2                         
+2  13 -4662.3  0 8298.3  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+p = 2.2e-16 << 0.05
+より、負の二項回帰が大幅にモデルとして性能が良さそうです。
 
 ## ランダムフォレスト回帰
 
