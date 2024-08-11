@@ -152,6 +152,20 @@ p = 2.2e-16 << 0.05
 
 ## ランダムフォレスト回帰
 
+```
+Call:
+ randomForest(formula = click ~ ., data = dat1, ntree = 4000) 
+               Type of random forest: regression
+                     Number of trees: 4000
+No. of variables tried at each split: 4
+
+          Mean of squared residuals: 183066.1
+                    % Var explained: 40.01
+```
+
+<img src="https://github.com/user-attachments/assets/467db52b-a14c-409a-8e2a-84b7a3dc5997" width="400">
+
+
 ## SVR
 
 
