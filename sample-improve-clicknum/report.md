@@ -152,6 +152,9 @@ p = 2.2e-16 << 0.05
 
 ## ランダムフォレスト回帰
 
+$`\{d_1, d_3, d_9\}`$
+$`\{d_2, d_6, d_7, d_10\}`$
+
 ```
 Call:
  randomForest(formula = click ~ ., data = dat1, ntree = 4000) 
@@ -162,6 +165,10 @@ No. of variables tried at each split: 4
           Mean of squared residuals: 183066.1
                     % Var explained: 40.01
 ```
+
+クリック数の増減に関わるデザイン要素を大きい順に並べてプロットした図です。
+負の二項回帰でクリックの増減に関わる説明変数を抽出しました。これと合わせて考えると、$`\{d_1, d_9\}`$ はクリック増に寄与していそうです。
+また、クリック減につながる $`\{d_2, d_6, d_7, d_10\}`$ が比較的上位に位置していることから、デザインは改善が必要そうです。
 
 <img src="https://github.com/user-attachments/assets/467db52b-a14c-409a-8e2a-84b7a3dc5997" width="400">
 
