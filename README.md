@@ -16,6 +16,12 @@
 
 このプロジェクトでは、一般化線形回帰から、ランダムフォレストやSVMまでを使用して、クリック数とデザイン要素の関係を調べます。
 
+## Kaggle
+
+[WiDS2021_Kaggle_result_TNN](https://github.com/kokeshiM0chi/demo-datascience/tree/main/WiDS2021_Kaggle_result_TNN)
+
+Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
+
 
 
 
