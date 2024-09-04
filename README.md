@@ -22,6 +22,12 @@
 
 Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
 
+## Apacheでアクセスログの解析(wip)
+
+作成中です。
+[sample-apache-log](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-apache-log)
+
+
 
 
 
