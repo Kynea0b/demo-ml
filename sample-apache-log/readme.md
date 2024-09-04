@@ -1,6 +1,7 @@
 !!!! 作成中です !!!!
 
 apache access logを解析するデモです。
+acccess logの解析から、botと人間の識別を行います。
 
 ## 環境
 
