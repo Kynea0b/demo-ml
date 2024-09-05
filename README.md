@@ -25,8 +25,10 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 ## Apacheでアクセスログの解析(wip)
 
 作成中です。botと人間のアクセスログの比較を行い、自動分類するモデルを作成する予定です。
-[paper](https://annals-csis.org/proceedings/2014/pliks/346.pdf)
 [sample-apache-log](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-apache-log)
+
+参考文献:
+- [Analysis of Aggregated Bot and Human Traffic on E-Commerce Site](https://annals-csis.org/proceedings/2014/pliks/346.pdf)
 
 
 
