@@ -31,8 +31,9 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 参考文献:
 - [Analysis of Aggregated Bot and Human Traffic on E-Commerce Site](https://annals-csis.org/proceedings/2014/pliks/346.pdf)
 
+## [WIP] 項目数が多く、項目間に強い相関がある性質のデータセットに対する時系列分析
 
-
+Kaggleコンペでは、Prophetを使用して、季節やイベントの影響を受けるデータの時系列分析を行ったので、その続編。
 
 
 
