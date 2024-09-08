@@ -33,6 +33,8 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 
 ## [WIP] 周期的な変動あるデータの時系列分析
 
+[sample-time-series-analysis](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-time-series-analysis)
+
 - Prediction using wiki views
 
 Kaggleコンペでは、Prophetを使用して、季節やイベントの影響を受けるデータの時系列分析を行ったので、その続編。項目数が多く、項目間に強い相関がある性質のデータセットに対する時系列分析も扱う。
