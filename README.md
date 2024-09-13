@@ -24,6 +24,18 @@
 
 Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
 
+
+## [WIP] Alibabaが採用するオンラインディスプレイ広告のCTR予測手法DINの実装
+
+CTRを改善するためにアリババ社で使用されているDIN
+[Deep Interest Network for Click-Through Rate Prediction](https://arxiv.org/abs/1706.06978)
+- ユーザの特定の広告の履歴行動から、ユーザの関心を適応的に学習してベクトル表現を与えるローカルアクティベーションユニットを構築
+- 上記のベクトル表現を広告ごとに異なるものにすることで、ユーザの興味関心を幅広く捉えて、モデルの表現能力を豊かにしている
+- さらにこのDINにおいて使用される数百まんの学習パラメータを学習するための工夫も行っている
+  
+参考文献:
+- https://arxiv.org/abs/1706.06978
+
 ## [WIP] Apacheでアクセスログの解析
 
 [sample-apache-log](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-apache-log)
