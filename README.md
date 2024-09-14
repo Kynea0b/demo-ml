@@ -36,6 +36,8 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 
 [sample-autoencoder](https://github.com/kokeshiM0chi/demo-ml/tree/main/sample-autoencoder)
 
+kerasを使用しています。
+
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
 
