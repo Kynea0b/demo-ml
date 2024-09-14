@@ -6,6 +6,12 @@
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
 
+## Kaggle Competition
+
+[WiDS2021_Kaggle_result_TNN](https://github.com/kokeshiM0chi/demo-datascience/tree/main/WiDS2021_Kaggle_result_TNN)
+
+Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
+
 ## 線形回帰 (LM)
 
 [sample-linear-regression](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-linear-regression)
@@ -18,11 +24,10 @@
 
 一般化線形回帰から、ランダムフォレストやSVMまでを使用して、クリック数とデザイン要素の関係を調べます。
 
-## Kaggle Competition
+## Autoencoderによる手書き文字分類
 
-[WiDS2021_Kaggle_result_TNN](https://github.com/kokeshiM0chi/demo-datascience/tree/main/WiDS2021_Kaggle_result_TNN)
+https://github.com/kokeshiM0chi/demo-ml/tree/main/sample-autoencoder
 
-Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
 
