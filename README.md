@@ -1,10 +1,24 @@
-# demo-sample
+# demo-ml
 
-このリポジトリはデータ分析のデモです。
-統計学や機械学習の手法を用いて、データの予測や分類を行います。
-また、kaggleコンテスト入賞時のデータ分析も掲載しています。
+このリポジトリは機械学習や統計分析のデモです。機械学習や統計学の手法を用いて、データの予測や分類を行います。また、kaggleコンテスト入賞時のデータ分析も掲載しています。
+実装とともに、手法の妥当性などについて考察も書いています。
+
+使用している手法リスト：
+- 線形回帰
+- 一般化線形回帰
+- SVM、Randomforest
+- Prophet
+- Autoencoder
+- Recommend
+
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
+
+## Kaggle Competition
+
+[WiDS2021_Kaggle_result_TNN](https://github.com/kokeshiM0chi/demo-datascience/tree/main/WiDS2021_Kaggle_result_TNN)
+
+Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
 
 ## 線形回帰 (LM)
 
@@ -18,11 +32,12 @@
 
 一般化線形回帰から、ランダムフォレストやSVMまでを使用して、クリック数とデザイン要素の関係を調べます。
 
-## Kaggle Competition
+## Autoencoderによる手書き文字分類
 
-[WiDS2021_Kaggle_result_TNN](https://github.com/kokeshiM0chi/demo-datascience/tree/main/WiDS2021_Kaggle_result_TNN)
+[sample-autoencoder](https://github.com/kokeshiM0chi/demo-ml/tree/main/sample-autoencoder)
 
-Prophetを使用して、休日や季節変動のある和菓子の売り上げについて、売り上げ予測をしています。
+kerasを使用しています。
+
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
 
