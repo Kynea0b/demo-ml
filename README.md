@@ -38,6 +38,12 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 
 kerasを使用しています。
 
+## Recommend with fastFM
+
+[fastFM paper](https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf)
+[fastFM library](https://github.com/ibayer/fastFM)
+[sample-recommend-with-fastFM](https://github.com/Kynea0b/demo-ml/tree/main/sample-recommend-with-fastFM)
+
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
 
