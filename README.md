@@ -40,9 +40,14 @@ kerasを使用しています。
 
 ## Recommend with fastFM
 
-[fastFM paper](https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf)
-[fastFM library](https://github.com/ibayer/fastFM)
 [sample-recommend-with-fastFM](https://github.com/Kynea0b/demo-ml/tree/main/sample-recommend-with-fastFM)
+
+fastFMを使用してアニメのレコメンドを実装します。DatasetはKaggleよりダウンロードします。
+
+
+参考文献とライブラリソースコード
+- [fastFM paper](https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf)
+- [fastFM library](https://github.com/ibayer/fastFM)
 
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
