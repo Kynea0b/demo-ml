@@ -9,7 +9,7 @@
 - SVM、Randomforest
 - Prophet
 - Autoencoder
-- Recommend
+- fastFM
 
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
