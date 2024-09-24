@@ -61,6 +61,10 @@ fastFMを使用してアニメのレコメンドを実装します。DatasetはK
 
 ## A/B test: Sequantial A/B testing
 
+[sequential-ab-testing-Netflix](https://github.com/Kynea0b/demo-ml/tree/main/sequential-ab-testing-Netflix)
+[paper; Rapid Regression Detection in Software Deployments through
+Sequential Testing](https://arxiv.org/pdf/2205.14762)
+
 頻繁にデプロイされるソフトウェアをテストするためには、固定された時点での比較ではなく、継続的に、任意の時点での比較ができる必要があります。
 これを行うための手法が"Sequantial A/B testing"と呼ばれる手法。この手法をカイ二乗検定との比較しながら性質を見ていくプロジェクトです。
 
