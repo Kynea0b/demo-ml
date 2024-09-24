@@ -10,7 +10,8 @@
 - Prophet
 - Autoencoder
 - fastFM
-- sequantial ab test (from Netflix)
+- Chi-square Test
+- sequential ab test (from Netflix)
 
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
