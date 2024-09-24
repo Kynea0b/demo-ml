@@ -1,4 +1,6 @@
-# sequential-ab-testing-Netflix
+# Sequantial A/B testing 
+
+## Rapid Regression Detection in Software Deployments through Sequential Testing
 
 頻繁にデプロイされるソフトウェアをテストするためには、固定された時点での比較ではなく、継続的に、任意の時点での比較ができる必要があります。 これを行うための手法が"Sequantial A/B testing"と呼ばれる手法。この手法をカイ二乗検定との比較しながら性質を見ていくプロジェクトです。
 
