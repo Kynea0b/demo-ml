@@ -10,6 +10,7 @@
 - Prophet
 - Autoencoder
 - fastFM
+- sequantial ab test (from Netflix)
 
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
@@ -51,6 +52,20 @@ fastFMを使用してアニメのレコメンドを実装します。DatasetはK
 参考文献とライブラリソースコード
 - [fastFM paper](https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf)
 - [fastFM library](https://github.com/ibayer/fastFM)
+
+## A/B test: chi square
+
+カイ二乗検定を使用したA/Bテストの簡単な例です。
+
+## A/B test: Sequantial A/B testing
+
+頻繁にデプロイされるソフトウェアをテストするためには、固定された時点での比較ではなく、継続的に、任意の時点での比較ができる必要があります。
+これを行うための手法が"Sequantial A/B testing"と呼ばれる手法。この手法をカイ二乗検定との比較しながら性質を見ていくプロジェクトです。
+
+参考
+[sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data](https://netflixtechblog.com/sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data-cba6c7ed49df)
+
+
 
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
