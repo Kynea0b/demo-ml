@@ -56,6 +56,7 @@ fastFMを使用してアニメのレコメンドを実装します。DatasetはK
 
 ## A/B test: chi square
 
+[sample-chi-square-test](https://github.com/Kynea0b/demo-ml/tree/main/sample-chi-square-test)
 カイ二乗検定を使用したA/Bテストの簡単な例です。
 
 ## A/B test: Sequantial A/B testing
