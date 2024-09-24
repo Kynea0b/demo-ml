@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import scipy.stats
 
+# dataset: https://www.kaggle.com/datasets/samtyagi/audacity-ab-testing
+
 df=pd.read_csv("./data/homepage_actions.csv")
 print(df.head())
 
