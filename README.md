@@ -9,7 +9,7 @@
 - SVM、Randomforest
 - Prophet
 - Autoencoder
-- Recommend
+- fastFM
 
 
 以下、各ディレクトリに格納されているプロジェクトの説明です。
@@ -37,6 +37,20 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 [sample-autoencoder](https://github.com/kokeshiM0chi/demo-ml/tree/main/sample-autoencoder)
 
 kerasを使用しています。
+
+## Recommend with fastFM
+
+SVMは非線形なデータを線形分離できる手法であるが、スパースなデータセットに対して性能が落ちる問題がある。SVMの利点と因数分解モデルを組み合わせて、スパースなデータセットにも性能を発揮するのがFastFM。
+このプロジェクトはFastFMを使用して、アニメのレコメンドを行う実装。
+
+[sample-recommend-with-fastFM](https://github.com/Kynea0b/demo-ml/tree/main/sample-recommend-with-fastFM)
+
+fastFMを使用してアニメのレコメンドを実装します。DatasetはKaggleよりダウンロードします。
+
+
+参考文献とライブラリソースコード
+- [fastFM paper](https://www.ismll.uni-hildesheim.de/pub/pdfs/Rendle2010FM.pdf)
+- [fastFM library](https://github.com/ibayer/fastFM)
 
 
 ## [WIP] 食べログから抽出したテキストデータを形態素解析して類似度判定（Neologd使用）
