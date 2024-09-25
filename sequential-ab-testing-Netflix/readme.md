@@ -6,7 +6,8 @@
 
 参考
 
-[sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data](https://netflixtechblog.com/sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data-cba6c7ed49df)
-[paper; Rapid Regression Detection in Software Deployments through Sequential Testing](https://arxiv.org/pdf/2205.14762)
+- [Sequential Testing: Blog](https://netflixtechblog.com/sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data-cba6c7ed49df)
+- [Sequential Testing: Paper](https://arxiv.org/pdf/2205.14762)
+- [Sequential Testing: Presentation](https://www.youtube.com/watch?v=n9tY58R4BlE)
 
-[講演動画](https://www.youtube.com/watch?v=n9tY58R4BlE)
+
