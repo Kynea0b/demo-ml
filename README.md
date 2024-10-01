@@ -42,7 +42,7 @@ keras、pytorchを使用しています。
 
 ## Recommend with fastFM
 
-SVMは非線形なデータを線形分離できる手法であるが、スパースなデータセットに対して性能が落ちる問題がある。SVMの利点と因数分解モデルを組み合わせて、スパースなデータセットにも性能を発揮するのがFastFM。
+SVMは非線形なデータを線形分離できる手法であるが、スパースなデータセットに対して性能が落ちる問題があります。SVMの利点と因数分解モデルを組み合わせて、スパースなデータセットにも性能を発揮するのがFastFM。
 このプロジェクトはFastFMを使用して、アニメのレコメンドを行う実装。
 
 [sample-recommend-with-fastFM](https://github.com/Kynea0b/demo-ml/tree/main/sample-recommend-with-fastFM)
