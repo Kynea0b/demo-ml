@@ -38,7 +38,7 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 
 [sample-autoencoder](https://github.com/kokeshiM0chi/demo-ml/tree/main/sample-autoencoder)
 
-kerasを使用しています。
+keras、pytorchを使用しています。
 
 ## Recommend with fastFM
 
