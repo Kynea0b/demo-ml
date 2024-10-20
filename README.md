@@ -28,7 +28,7 @@ Prophetを使用して、休日や季節変動のある和菓子の売り上げ�
 
 カリフォルニアデータセットをもとに線形回帰から、重回帰分析までを行います。
 
-## 一般化線形回帰(GLM)からランダムフォレスト、SVNまで
+## 一般化線形回帰(GLM)からランダムフォレスト、SVMまで
 
 [sample-improve-clicknum](https://github.com/kokeshiM0chi/demo-datascience/tree/main/sample-improve-clicknum)
 
