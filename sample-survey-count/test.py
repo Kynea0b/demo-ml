@@ -69,15 +69,18 @@ if len(change_point_indices) > 0:
         figsize=(12, 6)
     )
 
+    # フォント設定（日本語対応）
+    plt.rcParams['font.family'] = ['Hiragino Sans', 'Yu Gothic', 'Meiryo', 'sans-serif']
+
     # タイトルを図全体に設定
-    fig.suptitle(f"Change Point Detection on {FILE_NAME}")
+    fig.suptitle(f"Change Point Detection on {FILE_NAME}", fontsize=14)
 
     # 軸ラベルと目盛りの設定（axarrがリストでなくても動作する）
     # 最初に型をチェック
     if hasattr(axarr, 'set_xlabel'):  # 単一のAxesオブジェクトの場合
         ax = axarr
-        ax.set_xlabel("Data Index (日付順)")
-        ax.set_ylabel("Event Count")
+        ax.set_xlabel("Data Index (Date order)", fontsize=12)
+        ax.set_ylabel("Event Count", fontsize=12)
         ax.grid(True)
 
         # 日付ラベルをより見やすく表示
@@ -88,11 +91,11 @@ if len(change_point_indices) > 0:
         ax.set_xticklabels(tick_labels[::step], rotation=45, ha="right")
     else:  # 複数のAxesオブジェクトがある場合
         # 最後のサブプロットにX軸ラベルを設定
-        axarr[-1].set_xlabel("Data Index (日付順)")
+        axarr[-1].set_xlabel("Data Index (Date order)", fontsize=12)
 
         # すべてのサブプロットにY軸ラベルとグリッドを設定
         for ax in axarr:
-            ax.set_ylabel("Event Count")
+            ax.set_ylabel("Event Count", fontsize=12)
             ax.grid(True)
 
         # 最後のサブプロットに日付ラベルを設定
