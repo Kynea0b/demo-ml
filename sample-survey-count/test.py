@@ -61,24 +61,46 @@ if len(change_point_indices) > 0:
         print(f"- {date.strftime('%Y-%m-%d')}")
 
     # 可視化
-    plt.figure(figsize=(12, 6))
-    rpt.display(
+    fig, axarr = rpt.display(
         signal, result_indices,
         computed_chg_pts_color="blue",
         computed_chg_pts_linewidth=3,
-        computed_chg_pts_alpha=0.5
+        computed_chg_pts_alpha=0.5,
+        figsize=(12, 6)
     )
 
-    plt.title(f"Change Point Detection on {FILE_NAME}")
-    plt.xlabel("Data Index (日付順)")
-    plt.ylabel("Event Count")
-    plt.grid(True)
+    # タイトルを図全体に設定
+    fig.suptitle(f"Change Point Detection on {FILE_NAME}")
 
-    # 日付ラベルをより見やすく表示
-    tick_positions = np.arange(len(df))
-    tick_labels = [date.strftime("%Y-%m-%d") for date in df.index]
-    step = max(1, len(df) // 10)  # 10個程度の間隔でラベルを表示
-    plt.xticks(tick_positions[::step], tick_labels[::step], rotation=45, ha="right")
+    # 軸ラベルと目盛りの設定（axarrがリストでなくても動作する）
+    # 最初に型をチェック
+    if hasattr(axarr, 'set_xlabel'):  # 単一のAxesオブジェクトの場合
+        ax = axarr
+        ax.set_xlabel("Data Index (日付順)")
+        ax.set_ylabel("Event Count")
+        ax.grid(True)
+
+        # 日付ラベルをより見やすく表示
+        tick_positions = np.arange(len(df))
+        tick_labels = [date.strftime("%Y-%m-%d") for date in df.index]
+        step = max(1, len(df) // 10)  # 10個程度の間隔でラベルを表示
+        ax.set_xticks(tick_positions[::step])
+        ax.set_xticklabels(tick_labels[::step], rotation=45, ha="right")
+    else:  # 複数のAxesオブジェクトがある場合
+        # 最後のサブプロットにX軸ラベルを設定
+        axarr[-1].set_xlabel("Data Index (日付順)")
+
+        # すべてのサブプロットにY軸ラベルとグリッドを設定
+        for ax in axarr:
+            ax.set_ylabel("Event Count")
+            ax.grid(True)
+
+        # 最後のサブプロットに日付ラベルを設定
+        tick_positions = np.arange(len(df))
+        tick_labels = [date.strftime("%Y-%m-%d") for date in df.index]
+        step = max(1, len(df) // 10)  # 10個程度の間隔でラベルを表示
+        axarr[-1].set_xticks(tick_positions[::step])
+        axarr[-1].set_xticklabels(tick_labels[::step], rotation=45, ha="right")
 
     plt.tight_layout()
     plt.show()
